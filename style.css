@@ -1,0 +1,281 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de la navegación */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav nav {
+    flex: 1; /* Esto permite que el menú ocupe todo el espacio restante */
+}
+
+.buscador {
+    margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+    display: flex;
+    align-items: center;
+}
+
+.buscador input[type="text"] {
+    padding: 5px; /* Reduce el padding para hacerlo más pequeño */
+    border-radius: 3px; /* Reducir el radio del borde para hacerlo más suave */
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    width: 150px; /* Define un ancho fijo para el campo de entrada */
+}
+
+.buscador button {
+    padding: 5px 10px; /* Reduce el padding para hacerlo más pequeño */
+    border-radius: 3px; /* Reducir el radio del borde para hacerlo más suave */
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de las secciones */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Separador {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Separador h2 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.Texto p, .Texto ol {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.Texto ol {
+    padding-left: 20px;
+}
+
+.Texto ol li {
+    margin-bottom: 5px;
+}
+
+.EDF img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo muestra interfaces */
+
+.pantallazos-app {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo de la sección de contacto */
+
+.Contacto {
+    text-align: center;
+}
+
+.Contacto h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.Contacto p {
+    margin-bottom: 5px;
+}
+
+.Contacto a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.Contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Estio de la sección equipo */
+
+.desarrolladores {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Desarrollador1, .Desarrollador2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+}
+
+.Desarrollador1 h2, .Desarrollador2 h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-align: center;
+}
+
+.Texto p {
+    text-align: justify;
+}
+
+.Desarrollador1, .Desarrollador2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto; /* Centrar horizontalmente */
+    display: block; /* Asegura que la imagen sea un bloque para que el margin: auto funcione */
+    margin-bottom: 10px;
+}
+
+/*Formulario contacto*/
+
+.formulario-pqrs {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.boton {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}

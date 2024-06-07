@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signolingo</title>
+    <link rel="shortcut icon" href="/img/ICONO.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="Img-Principal">
+            <img src="img/IMAGEN PRINCIPAL.png" alt="Imagen Img-Principal">
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="menu-nav">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">¿Quiénes Somos?</a></li>
+                    <li><a href="solution.html">Soluciones</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="team.html">Equipo de trabajo</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="Separador">
+            <h2>Contactenos</h2>
+        </div>
+
+
+        <div class="Texto">
+            <p>En Signolingo, valoramos profundamente la opinión y la retroalimentación de nuestros clientes. Estamos
+                aquí para escucharte, atender tus necesidades y brindarte el mejor servicio posible. ¿Listo para
+                comunicarte con nosotros? ¡Aquí te mostramos cómo puedes hacerlo!
+                <br></br>
+                Canal de Atención al Cliente
+                Nuestro equipo de atención al cliente está disponible para responder a tus preguntas, ayudarte con la
+                adquisición de servicios y brindarte asistencia en cualquier problema que puedas enfrentar. Puedes
+                comunicarte con nosotros a través de los siguientes canales:
+            </p>
+        </section>
+            <section>
+            <h3>Canal de Atención al Cliente</h3>
+            <p>Nuestro equipo de atención al cliente está disponible para responder a tus preguntas, ayudarte con la
+                adquisición de servicios y brindarte asistencia en cualquier problema que puedas enfrentar. Puedes
+                comunicarte con nosotros a través de los siguientes canales:
+                <br></br>
+                Teléfono: Llámanos o escribenos un Whatsapp al 3002431940 o 3225402087 para hablar directamente con uno
+                de nuestros
+                representantes. Estamos disponibles de lunes a viernes de 8:00 a.m. a 5:00 p.m. para atender tus
+                consultas.
+                <br></br>
+                Correo Electrónico: Envíanos un correo electrónico a contacto@signolingo.co o ventas@signolingo.co y te
+                responderemos en el menor tiempo posible.
+            </p>
+            </section>
+            <section>
+                <h3>Formulario de Contacto en Línea</h3>
+                <p>Si prefieres comunicarte con nosotros de forma digital, también puedes llenar nuestro formulario de
+                    contacto en línea. Simplemente completa el
+                    formulario con tus datos y tu mensaje. Nos comprometemos a responder a todas las consultas en un plazo
+                    máximo de 3 días habiles.</p>
+                </div>
+                <section class="formulario-pqrs">
+                    <form action="#" method="post" id="formularioPQRS">
+                        <div class="campo">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="campo">
+                            <label for="tipo">Tipo de PQRS:</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="">Seleccionar</option>
+                                <option value="Peticion">Petición</option>
+                                <option value="Queja">Queja</option>
+                                <option value="Reclamo">Reclamo</option>
+                                <option value="Sugerencia">Sugerencia</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <div class="boton">
+                            <button type="submit" id="enviarBtn">Enviar</button>
+                        </div>
+                    </form>
+                    <div id="mensajeEnviado" style="display: none;">
+                        <p>¡Mensaje Enviado!</p>
+                    </div>
+                </section>
+            
+                <script>
+                    document.getElementById('formularioPQRS').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        document.getElementById('mensajeEnviado').style.display = 'block';
+                        resetearFormulario();
+                    });
+            
+                    function resetearFormulario() {
+                        document.getElementById('formularioPQRS').reset();
+                    }
+                </script>
+            </section>
+
+    <section>
+
+        <div class="Separador">
+             <h2>Contactanos</h2>
+        </div>
+
+
+        <div class="Contacto">
+            <h3>SIGNOLINGO COLOMBIA</h3>
+            <p>Dirección KR 7 #24 - 89 Piso 40 / Bogotá D.C</p>
+            <p>Whatsapp: 3002431940 / 3225402087</p>
+            <p>Email: contacto@signolingo.co / ventas@signolingo.co</p>
+            <p>Facebook: SignolingoCol</p>
+            <p>Instagram: @SignolingoCol</p>
+            <p>X: @SignolingoCo1</p>
+        </div>
+
+    </section>
+    
+
+</body>
+
+</html>
